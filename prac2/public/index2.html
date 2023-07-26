@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lightbulb App</title>
+  <link rel="stylesheet" type="text/css" href="/style2.css">
+</head>
+
+<body>
+
+  <h1 id="prac"> Practical 2.2</h1>
+
+  <img id="bulb" src="/bulb_off.png">
+
+  <script>
+    const bulb = document.getElementById('bulb');
+
+    let isOn = false;
+
+    bulb.addEventListener('click', () => {
+
+      isOn = !isOn;
+
+      if (isOn) {
+        bulb.src = '/bulb_on.png';
+      } else {
+        bulb.src = '/bulb_off.png';
+      }
+
+    });
+  </script>
+
+</body>
+
+</html>

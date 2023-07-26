@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#prac {
+    text-align: center;
+    color: #27ae60;
+    margin-top: 50px;
+}
+
+#bulb {
+    width: 150px;
+    margin-top: 100px;
+}
+
+
+button {
+    position: absolute;
+    top: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+#onBtn {
+    left: 280px;
+    background: #2ecc71;
+}
+
+#onBtn:active {
+    background: #27ae60;
+}
+
+#offBtn {
+    right: 280px;
+    background: #2ecc71;
+}
+
+#offBtn:active {
+    background: #c0392b;
+}

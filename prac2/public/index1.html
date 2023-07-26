@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lightbulb App</title>
+  <link rel="stylesheet" type="text/css" href="/style1.css">
+</head>
+<body>
+
+  <h1 id="prac">Practical 2.1</h1>
+
+  <img id="bulb" src="/bulb_off.png">
+
+  <button id="onBtn" onclick="turnOn()">Turn On</button>
+  <button id="offBtn" onclick="turnOff()">Turn Off</button>
+
+  <script>
+    function turnOn() {
+      document.getElementById('bulb').src = '/bulb_on.png';
+      document.getElementById('onBtn').style.color = 'blue';
+      document.getElementById('offBtn').style.color = 'black';
+      // document.body.style.backgroundColor = 'black'; 
+    }
+
+    function turnOff() {
+      document.getElementById('bulb').src = '/bulb_off.png';
+      document.getElementById('onBtn').style.color = 'black';
+      document.getElementById('offBtn').style.color = 'blue';
+      // document.body.style.backgroundColor = 'white'; 
+
+
+    }
+  </script>
+
+</body>
+</html>
