@@ -1,0 +1,14 @@
+{
+  "name": "date_module_shivam",
+  "version": "1.0.0",
+  "description": "hello this is date time module ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dateTime"
+  ],
+  "author": "shivam",
+  "license": "ISC"
+}
