@@ -40,3 +40,35 @@ fs.readFile(filePath, 'utf8', (err, data) => {
     }
   });
 });
+
+
+// const fs = require('fs');
+// const csv = require('csv-parser');
+// const createCsvWriter = require('csv-writer').createObjectCsvWriter;
+
+// const filePath = 'Students.csv';
+// const columnToDelete = 'Name'; // Replace with the column name you want to delete.
+
+// // Read the CSV file and store its content in the 'rows' array
+// const rows = [];
+
+// fs.createReadStream(filePath)
+//   .pipe(csv())
+//   .on('data', (row) => {
+//     delete row[columnToDelete]; // Delete the specified column from each row
+//     rows.push(row);
+//   })
+//   .on('end', () => {
+//     const csvWriter = createCsvWriter({ 
+//       path: 'Students.csv', // Replace with the desired output file path
+//       header: Object.keys(rows[0]).map(column => ({ id: column, title: column }))
+//     });
+
+//     csvWriter.writeRecords(rows)
+//       .then(() => {
+//         console.log('Column deleted successfully');
+//       })
+//       .catch((error) => {
+//         console.error('Error deleting column:', error);
+//       });
+//   });
