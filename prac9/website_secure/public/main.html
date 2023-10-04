@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Management</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  
+</head>
+<body>
+
+    <div class="container">
+        <h1>Employee Management</h1>
+        <div class="forms">
+            <h2>Get Employee Data by ID</h2>
+            <form id="getForm" action="/api/get" method="POST">
+                <label for="vhv">Enter Employee ID:</label>
+                <input type="number" id="getId" name="id" required>
+                <button type="submit">Get Employee Data</button>
+            </form>
+
+            <h2>Add New Employee</h2>
+            <form id="addForm" action="/api/employe" method="POST">
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" name="name">
+                <label for="Email">Email:</label>
+                <input type="email" id="Email" name="email">
+                <label for="Phone">Phone:</label>
+                <input type="tel" id="Phone" name="phone">
+                <label for="Age">Age:</label>
+                <input type="number" id="Age" name="age">
+                <button type="submit">Add Employee</button>
+            </form>
+
+            <h2>Update Employee Data</h2>
+            <form id="updateForm" action="/api/put" method="POST">
+                <label for="updateId">Enter Employee ID:</label>
+                <input type="number" id="updateId" name="id" required>
+                <!-- Additional form fields to update employee data -->
+                <label for="updateName">Name:</label>
+                <input type="text" id="updateName" name="name">
+                <label for="updateEmail">Email:</label>
+                <input type="email" id="updateEmail" name="email">
+                <label for="updatePhone">Phone:</label>
+                <input type="tel" id="updatePhone" name="phone">
+                <label for="updateAge">Age:</label>
+                <input type="number" id="updateAge" name="age">
+                <button type="submit">Update Employee Data</button>
+            </form>
+
+            <h2>Delete Employee Data</h2>
+            <form id="deleteForm" action="/api/delete" method="POST">
+                <label for="deleteId">Enter Employee ID:</label>
+                <input type="number" id="deleteId" name="id" required>
+                <!-- Additional form fields or confirmation message for delete operation -->
+                <button type="submit">Delete Employee Data</button>
+            </form>
+
+            <h2>Get All Employee Data</h2>
+            <form id="getAllDataForm" action="/api/all" method="get">
+                <button type="submit">Get All Data</button>
+            </form>
+        </div>
+    </div>
+
+  
+</body>
+</html>

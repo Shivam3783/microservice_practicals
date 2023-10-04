@@ -1,0 +1,15 @@
+openssl genrsa -out key.pem
+openssl req -new -key key.pem -out csr.pem
+openssl x509 -req -days 365 -in csr.pem -signkey key.pem -out cert.pem
+
+
+
+
+explanation:
+
+1. The openssl genrsa command is used to generate an RSA private key. RSA (Rivest-Shamir-Adleman) is a widely used asymmetric encryption algorithm that involves the use of a pair of keys: a private key for encryption and a corresponding public key for decryption. The genrsa command is used to generate the private key part of this pair.
+
+2. The openssl req command is used for various operations related to certificate signing requests (CSRs) and certificates. In your provided command, you are creating a new CSR (Certificate Signing Request) using an existing private key. 
+
+3. The openssl x509 command is used for working with X.509 certificates in OpenSSL. In your provided command, you are using it to sign a certificate signing request (CSR) and create a self-signed certificate. 
+
